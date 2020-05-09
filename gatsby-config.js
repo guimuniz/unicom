@@ -66,7 +66,7 @@ module.exports = {
       resolve: `gatsby-plugin-page-creator`,
       options: {
         path: `${__dirname}/src/pages`,
-        ignore: [`**/styles.js`]
+        ignore: [`**/styles.js`,`**/styles.ts`]
       },
     },
     `gatsby-plugin-sharp`,
