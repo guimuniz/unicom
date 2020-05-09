@@ -9,6 +9,7 @@ module.exports = {
     title: `Gatsby`,
     siteUrl: `https://www.gatsbyjs.org`,
     description: `Blazing fast modern site generator for React`,
+    author: `@xguimuniz`,
     social: [
       {
         name: 'instagram',
@@ -52,7 +53,8 @@ module.exports = {
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
         display: `standalone`,
-        //icon: path / 512x512
+        display: `minimal-ui`,
+        icon: `src/images/gatsby-icon.png`, //512x512
       },
     },
     `gatsby-plugin-sitemap`,
@@ -76,6 +78,13 @@ module.exports = {
       options: {
         name: `categories`,
         path: `${__dirname}/content/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     `gatsby-transformer-remark`,

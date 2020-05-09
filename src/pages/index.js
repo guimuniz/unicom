@@ -1,14 +1,24 @@
 import React from "react"
 import { Link, graphql } from 'gatsby';
 
+import Layout from "../components/layout"
+import Image from "../components/image"
+import SEO from "../components/seo"
+
+import { Categories } from './styles';
+
 const Home = ({ data }) => {
   const { edges } = data.allMarkdownRemark
 
     return (
-      <>
-        <h1>Homepage</h1>
+      <Layout>
+        <SEO title="Home" />
 
-        <div>
+        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+          <Image />
+        </div>
+
+        <Categories>
           {edges.map(item => {
             const { node: {frontmatter: { path, title }} } = item
 
@@ -18,9 +28,8 @@ const Home = ({ data }) => {
               </Link>
             )
           })}
-        </div>
-
-      </>
+        </Categories>
+      </Layout>
     )
   };
 
