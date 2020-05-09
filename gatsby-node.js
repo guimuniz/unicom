@@ -35,7 +35,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         return
       }
 
-      const category = path.resolve('src/templates/category.tsx')
+      const category = path.resolve('src/templates/category.js')
 
       const categories = result.data.allMarkdownRemark.edges;
 
@@ -45,6 +45,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         createPage({
           path,
           component: category,
+          context: {
+            path
+          }
         })
       })
 
