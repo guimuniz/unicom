@@ -71,6 +71,16 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `categories`,
+        path: `${__dirname}/content/`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-typescript`,
+    `tsconfig-paths-webpack-plugin`,
     `gatsby-plugin-offline`,
   ],
 }
