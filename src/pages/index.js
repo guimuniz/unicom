@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby';
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import newLayout from "../components/new-layout"
 
 import { Categories } from './styles';
 
@@ -11,7 +12,7 @@ const Home = ({ data }) => {
   const { edges } = data.allMarkdownRemark
 
     return (
-      <Layout>
+      <newLayout>
         <SEO title="Home" />
 
         <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
@@ -29,7 +30,7 @@ const Home = ({ data }) => {
             )
           })}
         </Categories>
-      </Layout>
+      </newLayout>
     )
   };
 
