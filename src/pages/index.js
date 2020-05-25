@@ -28,8 +28,12 @@ const Home = ({ data }) => {
           <p>UNICOM - Unindo a universidade com a comunidade</p>
 
           <div>
-            <FaInstagram size={30} />
-            <FaFacebook size={30} />
+            <Link to="/">
+              <FaInstagram size={30} />
+            </Link>
+            <Link to="/">
+              <FaFacebook size={30} />
+            </Link>
           </div>
         </Header>
 
@@ -40,13 +44,14 @@ const Home = ({ data }) => {
             return (
               <Categories>
                 <Link to={path} key={path}>
-                  <h1>{title}</h1>
+                  <div>
+                    <h1>{title}</h1>
 
-                  <img
-                    src={negocios}
-                    alt={`${image}-logo`}
-                  />
-
+                    <img
+                      src={negocios}
+                      alt={`${image}-logo`}
+                    />
+                  </div>
                 </Link>
               </Categories>
             )

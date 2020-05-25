@@ -16,8 +16,16 @@ export const Header = styled.header`
     top: 15px;
   }
 
-  div {
-    justify-content: space-between;
+  p {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 300px;
+  }
+
+  svg {
+    margin-right: 8px;
+    color: #3d3d4d;
+    transition: color 0.2s;
   }
 
 `;
@@ -25,42 +33,49 @@ export const Header = styled.header`
 export const Container = styled.section`
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
   background: linear-gradient(180deg, rgba(0, 189, 63, 0.38) 0%, rgba(162, 215, 74, 0.38) 100%);
   -webkit-font-smoothing: antialiased;
   margin: 0px;
 `;
 
 export const Categories = styled.div`
+  display: flex;
   margin: 0 auto;
   margin-top: 80px;
   max-width: 500px;
-  background: #fff;
-  border-radius: 10px;
-  padding: 24px;
-  text-decoration: none;
 
-  width: 224px;
-  height: 205px;
-  left: 319px;
-  top: 201px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0, 90px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    text-decoration: none;
+    width: 224px;
+    height: 205px;
+  }
 
   a {
-    width: 100%;
     padding: 24px;
     text-decoration: none;
   }
 
   h1 {
+    display: flex;
+    justify-content: center;
     color: #000;
     font-size: 26px;
   }
 
   img {
+    display: flex;
+    align-items: center;
     width: 100px;
     height: 100px;
-    left: 381px;
-    top: 230px;
   }
 `;
 
