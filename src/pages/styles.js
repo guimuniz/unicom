@@ -1,66 +1,79 @@
 import styled from 'styled-components';
 
-import githubBackground from '../images/github-background.svg';
 
 export const Page = styled.html`
-  * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-    background: #F0F0F5 url(${githubBackground}) no-repeat 70% top;
-    -webkit-font-smoothing: antialiased;
-  }
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: linear-gradient(180deg, rgba(0, 189, 63, 0.38) 0%, rgba(162, 215, 74, 0.38) 100%);
+  -webkit-font-smoothing: antialiased;
 `;
 
-export const Categories = styled.div`
-  margin-top: 80px;
-  max-width: 700px;
 
-  a {
-    background: #fff;
-    border-radius: 5px;
-    width: 100%;
-    padding: 24px;
-    display: block;
-    text-decoration: none;
-
-    display: flex;
-    align-items: center;
-    transition: transform 0.2s;
-
-    &:hover {
-      transform: translateX(10px);
-    }
-
-    & + a {
-      margin-top: 16px;
-    }
-  }
+export const Header = styled.header`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  height: 90px;
 
   img {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
+    position: absolute;
+    width: 60px;
+    height: 60.21px;
+    left: 45px;
+    top: 15px;
   }
 
   div {
-    margin-left: 16px;
-
-    strong {
-      font-size: 20px;
-      color: #3d3d4d;
-    }
-
-    p {
-      font-size: 18px;
-      color: #a8a8b3;
-      margin-top: 4px;
-    }
+    justify-content: space-between;
   }
 
-  svg {
-    margin-left: auto;
-    color: #cbcbd6;
+`;
+
+export const Container = styled.section`
+  display: flex;
+  justify-content: space-around;
+`;
+
+export const Categories = styled.div`
+  margin: 0 auto;
+  margin-top: 80px;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px;
+  text-decoration: none;
+
+  width: 224px;
+  height: 205px;
+  left: 319px;
+  top: 201px;
+
+  a {
+    width: 100%;
+    padding: 24px;
+    text-decoration: none;
   }
+
+  h1 {
+    color: #000;
+    font-size: 26px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    left: 381px;
+    top: 230px;
+  }
+`;
+
+
+export const Footer = styled.footer`
+  display: flex;
+  background: #ffd;
+  height: 90px;
 `;

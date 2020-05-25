@@ -1,6 +1,7 @@
 ---
-title: "Categoria Saúde"
+title: "Saúde"
 path: "/saude"
+image: "saude"
 date: 2020-05-09T00:00:00.000Z
 ---
 
