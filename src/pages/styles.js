@@ -1,17 +1,6 @@
 import styled from 'styled-components';
 
 
-export const Page = styled.html`
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  background: linear-gradient(180deg, rgba(0, 189, 63, 0.38) 0%, rgba(162, 215, 74, 0.38) 100%);
-  -webkit-font-smoothing: antialiased;
-`;
-
-
 export const Header = styled.header`
   display: flex;
   justify-content: space-around;
@@ -34,8 +23,12 @@ export const Header = styled.header`
 `;
 
 export const Container = styled.section`
+  height: 100%;
   display: flex;
   justify-content: space-around;
+  background: linear-gradient(180deg, rgba(0, 189, 63, 0.38) 0%, rgba(162, 215, 74, 0.38) 100%);
+  -webkit-font-smoothing: antialiased;
+  margin: 0px;
 `;
 
 export const Categories = styled.div`
@@ -73,7 +66,6 @@ export const Categories = styled.div`
 
 
 export const Footer = styled.footer`
-  display: flex;
-  background: #ffd;
+  background: #fff;
   height: 90px;
 `;

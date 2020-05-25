@@ -1,0 +1,23 @@
+/*
+ * Purpose:
+ * Assign height: "100%" to
+ * html, body, #___gatsby &
+ * div with role="group"
+*/
+
+html, body, #___gatsby {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+#gatsby-focus-wrapper {
+  height: 100%;
+}

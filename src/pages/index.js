@@ -10,13 +10,13 @@ import negocios from "../images/negocios.svg"
 import saude from "../images/logo.jpeg"
 import entretenimento from "../images/logo.jpeg"
 
-import { Page, Header, Container, Categories, Footer } from './styles';
+import { Header, Container, Categories, Footer } from './styles';
 
 const Home = ({ data }) => {
   const { edges } = data.allMarkdownRemark
 
     return (
-      <Page>
+      <>
         <SEO title="Home" />
 
         <Header>
@@ -33,30 +33,28 @@ const Home = ({ data }) => {
           </div>
         </Header>
 
-        <body>
-          <Container>
-            {edges.map(item => {
-              const { node: {frontmatter: { path, title, image }} } = item
+        <Container>
+          {edges.map(item => {
+            const { node: {frontmatter: { path, title, image }} } = item
 
-              return (
-                <Categories>
-                  <Link to={path} key={path}>
-                    <h1>{title}</h1>
+            return (
+              <Categories>
+                <Link to={path} key={path}>
+                  <h1>{title}</h1>
 
-                    <img
-                      src={negocios}
-                      alt={`${image}-logo`}
-                    />
+                  <img
+                    src={negocios}
+                    alt={`${image}-logo`}
+                  />
 
-                  </Link>
-                </Categories>
-              )
-            })}
-          </Container>
-        </body>
+                </Link>
+              </Categories>
+            )
+          })}
+        </Container>
 
-        {/* <Footer>Contatos: </Footer> */}
-      </Page>
+      <Footer>Contatos: </Footer>
+    </>
     )
   };
 
