@@ -1,12 +1,13 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
+   <img alt="unicom" src="src/images/logo.jpeg" width="60" />
 </p>
 <h1 align="center">
   UniCom
 </h1>
 
-🎓 Unindo a universidade com a comunidade! 🏘
+<p align="center">
+  🎓 Unindo a universidade com a comunidade! 🏘
+</p>
+
 
