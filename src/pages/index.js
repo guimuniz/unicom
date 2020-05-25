@@ -44,14 +44,12 @@ const Home = ({ data }) => {
             return (
               <Categories>
                 <Link to={path} key={path}>
-                  <div>
-                    <h1>{title}</h1>
+                  <h1>{title}</h1>
 
-                    <img
-                      src={negocios}
-                      alt={`${image}-logo`}
-                    />
-                  </div>
+                  <img
+                    src={negocios}
+                    alt={`${image}-logo`}
+                  />
                 </Link>
               </Categories>
             )

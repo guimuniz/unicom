@@ -46,7 +46,7 @@ export const Categories = styled.div`
   max-width: 500px;
 
 
-  div {
+  a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,9 +57,6 @@ export const Categories = styled.div`
     text-decoration: none;
     width: 224px;
     height: 205px;
-  }
-
-  a {
     padding: 24px;
     text-decoration: none;
   }
