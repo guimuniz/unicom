@@ -28,9 +28,9 @@ const Home = ({ data }) => {
           <p>UNICOM - Unindo a universidade com a comunidade</p>
 
           <div>
-            <Link to="/">
+            <a href="https://www.instagram.com/xguimuniz/?hl=pt-br" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={30} />
-            </Link>
+            </a>
             <Link to="/">
               <FaFacebook size={30} />
             </Link>
